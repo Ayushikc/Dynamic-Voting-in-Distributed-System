@@ -1,0 +1,117 @@
+Main Client Thread created
+I am a Server no:E and My Ip address is::10.176.69.56
+Listen Thread Started
+waiting to connect here
+Receiver - connected from SERVER 10 to SERVER 4
+waiting to connect here
+ABCDEFGH:
+*********************************
+ITERATION PHASE::1
+*********************************
+0000-1111
+
+Receiver - connected from SERVER 3 to SERVER 4
+waiting to connect here
+Read Thread connected to SERVERD with socket_id:7
+Sender - connected SERVER:E to SERVER:F
+Read Thread connected to SERVERF with socket_id:8
+Receiver - connected from SERVER 2 to SERVER 4
+waiting to connect here
+Read Thread connected to SERVERC with socket_id:12
+Sender - connected SERVER:E to SERVER:G
+Read Thread connected to SERVERG with socket_id:14
+Receiver - connected from SERVER 1 to SERVER 4
+waiting to connect here
+Read Thread connected to SERVERB with socket_id:18
+Sender - connected SERVER:E to SERVER:H
+Read Thread connected to SERVERH with socket_id:20
+Receiver - connected from SERVER 0 to SERVER 4
+waiting to connect here
+Read Thread connected to SERVERA with socket_id:24
+LOCK_REQUEST
+COMMIT:2 :8 :A
+********************************************
+Status::VN=2, RU=8, DS=A
+********************************************
+Write Success!
+LOCK_REQUEST
+COMMIT:3 :8 :A
+********************************************
+Status::VN=3, RU=8, DS=A
+********************************************
+Write Success!
+ABCD:EFGH:
+*********************************
+ITERATION PHASE::2
+*********************************
+-1-1-1-1-1111
+Removing the node SERVER:A connected to SERVER:E
+Removing the node SERVER:B connected to SERVER:E
+Removing the node SERVER:C connected to SERVER:E
+Removing the node SERVER:D connected to SERVER:E
+
+close
+READ Thread exit - disconnected to SERVER:C
+close
+READ Thread exit - disconnected to SERVER:D
+close
+READ Thread exit - disconnected to SERVER:B
+close
+READ Thread exit - disconnected to SERVER:A
+Initiate the Write Sequence
+LOCK_REQUEST sent to SERVER5
+LOCK_REQUEST sent to SERVER6
+LOCK_REQUEST sent to SERVER7
+VOTE_REQUEST:3 :8 :A
+Status of SERVER:F VN:3 RU:8 DS:A
+VOTE_REQUEST:3 :8 :A
+Status of SERVER:G VN:3 RU:8 DS:A
+VOTE_REQUEST:3 :8 :A
+Status of SERVER:H VN:3 RU:8 DS:A
+********************************************
+Status::VN=3, RU=8, DS=A
+********************************************
+write aborted
+A:BCD:EFG:H:
+*********************************
+ITERATION PHASE::3
+*********************************
+-1-1-1-1-111-1
+Removing the node SERVER:E connected to SERVER:H
+
+close
+READ Thread exit - disconnected to SERVER:H
+Initiate the Write Sequence
+LOCK_REQUEST sent to SERVER5
+LOCK_REQUEST sent to SERVER6
+VOTE_REQUEST:3 :8 :A
+Status of SERVER:F VN:3 RU:8 DS:A
+VOTE_REQUEST:3 :8 :A
+Status of SERVER:G VN:3 RU:8 DS:A
+********************************************
+Status::VN=3, RU=8, DS=A
+********************************************
+write aborted
+Receiver - connected from SERVER 2 to SERVER 4
+waiting to connect here
+Read Thread connected to SERVERC with socket_id:28
+Receiver - connected from SERVER 3 to SERVER 4
+waiting to connect here
+Read Thread connected to SERVERD with socket_id:20
+Receiver - connected from SERVER 1 to SERVER 4
+waiting to connect here
+Read Thread connected to SERVERB with socket_id:30
+A:BCDEFG:H:
+*********************************
+ITERATION PHASE::4
+*********************************
+-1000-111-1
+
+LOCK_REQUEST
+COMMIT:6 :6 :B
+********************************************
+Status::VN=6, RU=6, DS=B
+********************************************
+Write Success!
+End the Transactions
+SYSTEM EXIT

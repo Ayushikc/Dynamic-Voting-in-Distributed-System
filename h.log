@@ -1,0 +1,89 @@
+Main Client Thread created
+I am a Server no:H and My Ip address is::10.176.69.68
+Listen Thread Started
+waiting to connect here
+Receiver - connected from SERVER 10 to SERVER 7
+waiting to connect here
+ABCDEFGH:
+*********************************
+ITERATION PHASE::1
+*********************************
+0000000-1
+
+Receiver - connected from SERVER 6 to SERVER 7
+waiting to connect here
+Read Thread connected to SERVERG with socket_id:7
+Receiver - connected from SERVER 4 to SERVER 7
+waiting to connect here
+Read Thread connected to SERVERE with socket_id:10
+Receiver - connected from SERVER 3 to SERVER 7
+waiting to connect here
+Read Thread connected to SERVERD with socket_id:13
+Receiver - connected from SERVER 2 to SERVER 7
+waiting to connect here
+Read Thread connected to SERVERC with socket_id:16
+Receiver - connected from SERVER 1 to SERVER 7
+waiting to connect here
+Read Thread connected to SERVERB with socket_id:19
+Receiver - connected from SERVER 5 to SERVER 7
+waiting to connect here
+Read Thread connected to SERVERF with socket_id:22
+Receiver - connected from SERVER 0 to SERVER 7
+waiting to connect here
+Read Thread connected to SERVERA with socket_id:25
+LOCK_REQUEST
+COMMIT:2 :8 :A
+********************************************
+Status::VN=2, RU=8, DS=A
+********************************************
+Write Success!
+LOCK_REQUEST
+COMMIT:3 :8 :A
+********************************************
+Status::VN=3, RU=8, DS=A
+********************************************
+Write Success!
+ABCD:EFGH:
+*********************************
+ITERATION PHASE::2
+*********************************
+-1-1-1-1000-1
+Removing the node SERVER:A connected to SERVER:H
+Removing the node SERVER:B connected to SERVER:H
+Removing the node SERVER:C connected to SERVER:H
+Removing the node SERVER:D connected to SERVER:H
+
+close
+READ Thread exit - disconnected to SERVER:C
+close
+READ Thread exit - disconnected to SERVER:D
+close
+READ Thread exit - disconnected to SERVER:B
+close
+READ Thread exit - disconnected to SERVER:A
+LOCK_REQUEST
+ABORT
+Write Failed!
+A:BCD:EFG:H:
+*********************************
+ITERATION PHASE::3
+*********************************
+-1-1-1-1-1-1-1-1
+Removing the node SERVER:E connected to SERVER:H
+close
+READ Thread exit - disconnected to SERVER:F
+close
+READ Thread exit - disconnected to SERVER:E
+Removing the node SERVER:F connected to SERVER:H
+Removing the node SERVER:G connected to SERVER:H
+
+close
+READ Thread exit - disconnected to SERVER:G
+A:BCDEFG:H:
+*********************************
+ITERATION PHASE::4
+*********************************
+-1-1-1-1-1-1-1-1
+
+End the Transactions
+SYSTEM EXIT

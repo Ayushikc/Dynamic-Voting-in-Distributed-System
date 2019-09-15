@@ -1,0 +1,23 @@
+#include <iostreaam>
+int main()
+{
+	char Phase_Shift;
+	while(1)
+	{
+		cin>>Phase_Shift;
+		while(1)
+		{
+			if(cin.fail())
+			{
+				cin.clear();
+				cin.ignore(numeric_limits<streamsize>::max(),'\n');
+				cout<<Phase_Shift<<endl;
+				cin>>Phase_Shift;
+			}
+			if(!cin.fail())
+			break;
+
+		}
+	}
+return 0;
+}

@@ -4,8 +4,7 @@
 //      CS 6378 - PROJECT 3
 //       VOTING ALGORITHM
 //         SUBMITTED BY
-//   Jayaramaraja Balaramaraja(jxb162030)
-//     Ayushi Chourasi(akc170630)
+//     Ayushi Chourasia(akc170630)
 //
 /////////////////////////////////////////////////
 
